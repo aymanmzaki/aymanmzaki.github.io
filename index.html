@@ -62,50 +62,49 @@
                 <p class="text-slate-400">Tell us about your project and we’ll prepare a custom roadmap.</p>
             </div>
             
-            <form class="bg-white p-8 md:p-12 rounded-[2rem] text-slate-900 shadow-2xl">
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Project Type</label>
-                        <select class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
-                            <option>Custom SaaS Development</option>
-                            <option>Legacy System Modernization</option>
-                            <option>Fractional CTO / Consultancy</option>
-                            <option>AI / Machine Learning Integration</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Target Budget</label>
-                        <select class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
-                            <option>$10k - $25k</option>
-                            <option>$25k - $100k</option>
-                            <option>$100k+</option>
-                            <option>I'm not sure yet</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="mb-6">
-                    <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">The Challenge</label>
-                    <textarea placeholder="What is the #1 problem you are trying to solve?" rows="4" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition"></textarea>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-10">
-                    <div>
-                        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Your Name</label>
-                        <input type="text" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Work Email</label>
-                        <input type="email" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
-                    </div>
-                </div>
-
-                <button type="submit" class="w-full bg-brand-blue text-white py-5 rounded-xl text-xl font-bold hover:shadow-2xl transition-all" onsubmit = "mailto:requests@byelabs.solutions">
-                    Send Project Inquiry
-                </button>
-                <p class="text-center mt-6 text-slate-400 text-sm">Typical response time: <span class="text-slate-600 font-bold">Under 24 hours</span></p>
-            </form>
+            <form action="mailto:requests@byelabs.solutions" method="post" enctype="text/plain" class="bg-white p-8 md:p-12 rounded-[2rem] text-slate-900 shadow-2xl">
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div>
+            <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Project Type</label>
+            <select name="Project Type" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
+                <option>Custom SaaS Development</option>
+                <option>Legacy System Modernization</option>
+                <option>Fractional CTO / Consultancy</option>
+                <option>AI / Machine Learning Integration</option>
+            </select>
         </div>
+        <div>
+            <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Target Budget</label>
+            <select name="Budget" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
+                <option>$10k - $25k</option>
+                <option>$25k - $100k</option>
+                <option>$100k+</option>
+                <option>I'm not sure yet</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="mb-6">
+        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">The Challenge</label>
+        <textarea name="Challenge" placeholder="What is the #1 problem you are trying to solve?" rows="4" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition"></textarea>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <div>
+            <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Your Name</label>
+            <input name="Name" type="text" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
+        </div>
+        <div>
+            <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Work Email</label>
+            <input name="Email" type="email" class="w-full border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition">
+        </div>
+    </div>
+
+    <button type="submit" class="w-full bg-brand-blue text-white py-5 rounded-xl text-xl font-bold hover:shadow-2xl transition-all">
+        Send Project Inquiry
+    </button>
+    <p class="text-center mt-6 text-slate-400 text-sm">Typical response time: <span class="text-slate-600 font-bold">Under 24 hours</span></p>
+</form>        </div>
     </section>
     <div>
 <footer class="bg-white border-t border-slate-100 mt-20">
